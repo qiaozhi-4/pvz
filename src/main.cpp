@@ -6,6 +6,8 @@
 // - Documentation        https://dearimgui.com/docs (same as your local docs/ folder).
 // - Introduction, links and more at the top of imgui.cpp
 
+#include "menu.h"
+
 #include "imgui.h"
 #include "imgui_impl_win32.h"
 #include "imgui_impl_dx12.h"
@@ -271,6 +273,8 @@ int main(int, char **) {
                 show_another_window = false;
             ImGui::End();
         }
+
+        Menu::RenderMain();
 
         // Rendering
         ImGui::Render();
