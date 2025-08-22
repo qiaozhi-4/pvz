@@ -2,8 +2,9 @@
  * @author XGeorge
  * @date 2025/8/21 21:34:35
 */
-#include "menu.h"
+#include "Menu.h"
 #include "imgui.h"
+#include "Logger.h"
 
 namespace Menu {
     void RenderMain() {
