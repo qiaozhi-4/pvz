@@ -196,6 +196,9 @@ int main(int, char **) {
     //ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf");
     //IM_ASSERT(font != nullptr);
 
+    // 尝试加载中文字体
+    io.Fonts->AddFontFromFileTTF("D:\\fonts\\液晶数字体.ttf");
+
     // Our state
     bool show_demo_window = true;
     bool show_another_window = false;
