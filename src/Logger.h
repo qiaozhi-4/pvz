@@ -21,9 +21,11 @@
 #define LOG_TRACE(fmt, ...) EXTLOG(Logger::Level::Trace, fmt, __VA_ARGS__)
 
 
-class Logger {
+class Logger
+{
 public:
-    enum class Level {
+    enum class Level
+    {
         None,
         Critical,
         Error,

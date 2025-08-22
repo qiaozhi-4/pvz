@@ -4,8 +4,10 @@
 #include <cstdarg>
 #include <filesystem>
 
-void Logger::Log(Logger::Level logLevel, const char *filepath, int line, const char *fmt, ...) {
-    switch (logLevel) {
+void Logger::Log(Logger::Level logLevel, const char *filepath, int line, const char *fmt, ...)
+{
+    switch (logLevel)
+    {
         case Logger::Level::None:
             std::cout << "[" << RESET << "None" << RESET << "]";
             break;
