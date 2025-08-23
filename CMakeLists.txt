@@ -47,6 +47,7 @@ target_include_directories(pvz PRIVATE
         ${IMGUI_DIR}
         ${IMGUI_DIR}/backends
         ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/lib
 )
 
 # 指定目标（这里是 pvz 可执行文件）需要链接的库
