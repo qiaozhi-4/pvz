@@ -9,6 +9,10 @@
 
 namespace Menu
 {
+    void init()
+    {
+        Config::init("cfg.json");
+    }
 
     void RenderMain()
     {
@@ -24,6 +28,10 @@ namespace Menu
             if (ImGui::Button("打印窗口大小"))
             {
                 LOG_DEBUG("%f,%f", displaySize.x, displaySize.y);
+            }
+            if (ImGui::Button("保存配置"))
+            {
+                Config::save();
             }
 
             ChildWindow();

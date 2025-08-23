@@ -7,6 +7,9 @@
 
 namespace Menu
 {
+    // 初始化
+    void init();
+
     void RenderMain();
 
     // 子窗口

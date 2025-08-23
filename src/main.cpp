@@ -208,6 +208,7 @@ int main(int, char **)
 
     // 尝试加载中文字体
     io.Fonts->AddFontFromFileTTF("D:\\fonts\\液晶数字体.ttf");
+    Menu::init();
 
     // Our state
     bool show_demo_window = true;
